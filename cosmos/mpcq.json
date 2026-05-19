@@ -9,7 +9,9 @@
     "email": "admin@moneypoolscash.com",
     "website": "https://mpcq.moneypoolscash.com"
   },
-  "bip44": {"coinType": 60},
+  "bip44": {
+    "coinType": 60
+  },
   "bech32Config": {
     "bech32PrefixAccAddr": "cosmos",
     "bech32PrefixAccPub": "cosmospub",
@@ -38,6 +40,10 @@
       }
     }
   ],
-  "features": ["eth-address-gen", "eth-key-sign", "cosmwasm", "ibc-transfer"],
-  "chainType": "evm"
+  "stakeCurrency": {
+    "coinDenom": "MPCQ",
+    "coinMinimalDenom": "ampcq",
+    "coinDecimals": 18
+  },
+  "features": ["eth-address-gen", "eth-key-sign", "cosmwasm", "ibc-transfer"]
 }
